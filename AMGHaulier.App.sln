@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMGHaulier.App.Android", "AMGHaulier.App\AMGHaulier.App.Android\AMGHaulier.App.Android.csproj", "{29B2818C-1C7D-46B2-8D79-152D467F8EDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMGHaulier.App", "AMGHaulier.App\AMGHaulier.App\AMGHaulier.App.csproj", "{604CD43B-6195-4BA6-9081-1321505D1A4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29B2818C-1C7D-46B2-8D79-152D467F8EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29B2818C-1C7D-46B2-8D79-152D467F8EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29B2818C-1C7D-46B2-8D79-152D467F8EDD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{29B2818C-1C7D-46B2-8D79-152D467F8EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29B2818C-1C7D-46B2-8D79-152D467F8EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29B2818C-1C7D-46B2-8D79-152D467F8EDD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{604CD43B-6195-4BA6-9081-1321505D1A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604CD43B-6195-4BA6-9081-1321505D1A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604CD43B-6195-4BA6-9081-1321505D1A4A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{604CD43B-6195-4BA6-9081-1321505D1A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604CD43B-6195-4BA6-9081-1321505D1A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{604CD43B-6195-4BA6-9081-1321505D1A4A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9892C312-4293-4DCF-9A34-9D010CBA2781}
+	EndGlobalSection
+EndGlobal
