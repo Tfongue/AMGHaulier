@@ -5,7 +5,13 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMGHaulier.App.Android", "AMGHaulier.App\AMGHaulier.App.Android\AMGHaulier.App.Android.csproj", "{29B2818C-1C7D-46B2-8D79-152D467F8EDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMGHaulier.App", "AMGHaulier.App\AMGHaulier.App\AMGHaulier.App.csproj", "{604CD43B-6195-4BA6-9081-1321505D1A4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMGHaulier.App", "AMGHaulier.App\AMGHaulier.App\AMGHaulier.App.csproj", "{604CD43B-6195-4BA6-9081-1321505D1A4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMGHaulier.Common", "AMGHaulier.Common\AMGHaulier.Common.csproj", "{F8A2C989-1FCE-4C0A-9E89-55DEA401F935}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMGHaulier.Test", "AMGHaulier.Test\AMGHaulier.Test.csproj", "{2F753A44-1750-49C1-A5AC-562145E8642A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A1BB8E72-93D5-487B-8148-D91CE00FEAAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,9 +31,20 @@ Global
 		{604CD43B-6195-4BA6-9081-1321505D1A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{604CD43B-6195-4BA6-9081-1321505D1A4A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{604CD43B-6195-4BA6-9081-1321505D1A4A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F8A2C989-1FCE-4C0A-9E89-55DEA401F935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8A2C989-1FCE-4C0A-9E89-55DEA401F935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8A2C989-1FCE-4C0A-9E89-55DEA401F935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8A2C989-1FCE-4C0A-9E89-55DEA401F935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F753A44-1750-49C1-A5AC-562145E8642A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F753A44-1750-49C1-A5AC-562145E8642A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F753A44-1750-49C1-A5AC-562145E8642A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F753A44-1750-49C1-A5AC-562145E8642A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F753A44-1750-49C1-A5AC-562145E8642A} = {A1BB8E72-93D5-487B-8148-D91CE00FEAAF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9892C312-4293-4DCF-9A34-9D010CBA2781}

@@ -2,13 +2,63 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AMGHaulier.App"
-             x:Class="AMGHaulier.App.MainPage">
+             xmlns:controls="clr-namespace:AMGHaulier.App.Controls"
+             x:Class="AMGHaulier.App.MainPage"
+             Title="AMG Haulier">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+
+    <Grid Margin="5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" Orientation="Horizontal">
+            <Button Text="New" FontSize="12" Command="{Binding NewCommand}" AutomationId="NewAppointmentCommandButton" />
+            <Button Text="&lt;&lt; Back" FontSize="12" Command="{Binding PreviousMonthCommand}" AutomationId="PreviousMonthCommandButton" />
+            <Label Text="{Binding DisplayCurrentDate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Button Text="Next &gt;&gt;" FontSize="12" Command="{Binding NextMonthCommand}" AutomationId="NextMonthCommandButton" />
+        </StackLayout>
+
+        <ScrollView Grid.Row="1">
+            <controls:FlexView AlignContent="Start" JustifyContent="Start" FlowDirection="LeftToRight" Wrap="Wrap" 
+                               ItemsSource="{Binding Days}" AutomationId="aysOfMonthFlewViewD">
+                <controls:FlexView.ItemTemplate>
+                    <DataTemplate> 
+                        <Frame BorderColor="LightBlue" Padding="5,0,0,2" CornerRadius="0" HeightRequest="80" WidthRequest="60">
+                            <StackLayout Margin="0,0">
+                                <ListView x:Name="AttendeeList"  ItemsSource="{Binding Appointments}"
+                                    ItemSelected="Handle_ItemSelected" HasUnevenRows="true"
+                                          AutomationId="DayAppointmentListView">
+
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <StackLayout Orientation="Vertical">
+                                                    <Label Text="{Binding Summary}" FontSize="12" TextColor="Black" 
+                                                           LineBreakMode="NoWrap" Margin="0,0"
+                                                           VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand"  />
+                                                
+                                                    <Label Text="{Binding Location}" FontSize="9" TextColor="Blue" 
+                                                           LineBreakMode="NoWrap" Margin="0,0"
+                                                           VerticalTextAlignment="Start" HorizontalOptions="StartAndExpand" />
+                                                    <BoxView Color="LightGreen" HeightRequest="1" VerticalOptions="EndAndExpand" />
+                                                </StackLayout>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                
+                                </ListView>
+                            
+                                <Label Text="{Binding Date.Day}" FontSize="12" HorizontalOptions="StartAndExpand" 
+                                   VerticalOptions="EndAndExpand" HorizontalTextAlignment="Start" VerticalTextAlignment="End" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </controls:FlexView.ItemTemplate>
+            </controls:FlexView>
+        </ScrollView>
+    </Grid>
+
 
 </ContentPage>
